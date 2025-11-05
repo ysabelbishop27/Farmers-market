@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap");
+body {
+  font-family: "Nunito Sans";
+  margin: 0;
+  background-color: #fff0cb;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.logo {
+  max-width: 350px;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-family: "Nunito Sans";
+  text-transform: uppercase;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+header {
+  text-align: center;
+  background-color: #ffb503;
+  border-bottom: 15px double #6e4c36;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 2rem;
+}
+a {
+  color: #3f631f;
+  text-decoration: none;
+}
+.button {
+  background-color: #4c7031;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+main {
+  padding: 2rem;
+}
+h1,
+h2,
+h3,
+p {
+  font-family: "Ovo";
+  color: #000000;
+}
+footer {
+  background-color: #ffb503;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 15px double #6e4c36;
+}
+.season-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) {
+  .season-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    justify-content: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
+}
+@media (min-width: 925px) {
+  header {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
